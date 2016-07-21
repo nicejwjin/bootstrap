@@ -1,7 +1,15 @@
 ## Google에서 프로그램명 + Download로 검색 ##
 - Meteor.js Download
+Node.js로 만들어진 웹 서버 플랫폼
+- Node.js Download
+Node.js 개발 플랫폼
 - Git Download
+프로그램 개발 소스 버전 관리 툴
 - WebStorm Download
+JavaScript를 프로그래밍 하기 좋은 에디터 프로그램
 - Robo Mongo Download
+MongoDB에 접속해서 데이터를 눈으로 확인 해 볼 수 있는 프로그램 (ex> MySQL Workbench)
 - Android Studio Download
+Android를 Java로 프로그래밍 하기 좋은 에디터 프로그램
 - LG Bridge Download
+Android 휴대폰에서 개발 테스트를 하기 위한 드라이버
