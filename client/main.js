@@ -9,7 +9,7 @@ Template.body.events({
     obj.name = name;
     obj.article = article;
     //Database.insert(obj);
-    Meteor.call('insertData', obj, function(err, rslt) {
+    Meteor.call('login', obj, function(err, rslt) {
       if (err) alert(err);
       else alert(rslt);
     });
