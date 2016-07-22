@@ -1,37 +1,15 @@
-//SELECT * from DB where 1000 <= no <= 10000
-
-cl = console.log;
-
-var standard = Test.findOne(
-  {
-    _id: 'o5szgNdo8qKZuyPKo'
+Meteor.methods({
+  'insertData': function(obj) {
+    //validation
+    Database.insert(obj);
+    return "글이 작성되었습니다";
+  },
+  'readData': function() {
+    var lists = Database.find().fetch();
+    return lists;
+  },
+  'removeData': function(_id) {
+    Database.remove({_id: _id});
+    return "삭제 되었습니다";
   }
-);
-
-//cl(Test.find({
-//  createdAt: {$lt: standard.createdAt}
-//}).fetch().length);
-
-var obj = {};
-obj.key = 'val';
-obj.key2 = 'val2';
-obj.key3 = 10;
-cl(obj);
-var arr = [];
-arr.push('val1');
-arr.push('val2');
-cl(arr);
-arr.pop();
-cl(arr);
-cl(arr.length);
-
-
-//$gte $gt $lte $lt $eq $ne
-
-//var tmp = Test.find({no: 9938}).fetch();
-//var tmp = Test.find({
-//  no: {$gte: 9938, $lt: 10000},
-//  calc: {$in: [122684610, 123437655]}
-//}).fetch();
-//
-//cl(tmp);
+});
